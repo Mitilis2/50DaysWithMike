@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Progress Steps</title>
+  </head>
+  <body>
+
+  <div class="container">
+
+    <!--SLIDE ONE-->
+      <div class="slide">
+        <h3>Who are you?</h3>
+        <form>
+          <label>First Name <span>*</span></label>
+            <input type="text" name="firstname" placeholder="What do I call you ..." required>      
+          <label>Last Name <span>*</span></label>
+            <input type="text"  name="lastname" placeholder="How do I formally call you ..." required>        
+          <label>E-mail <span>*</span></label>
+            <input type="text" name="email" placeholder="Where can I spam you ..." required>              
+          <label>Number <span>*</span></label>
+            <input type="text" name="number" placeholder="Where do I call you ..." required>    
+      </div>
+ 
+    <!-- SLIDE TWO -->
+    <div class="slide hidden-slide">
+      <h3>Where are you?</h3>
+      <form>
+        <label>Address Line 1 <span>*</span></label>
+          <input type="text" name="address1" placeholder="Where do you live ..." required>    
+        <label>Address Line 2 <span>*</span></label>
+          <input type="text"  name="address2" placeholder="Do you have an apartment number ...">      
+        <label>State <span>*</span></label>
+          <input type="text" name="state" placeholder="What state are you in..." required>            
+        <label>City <span>*</span></label>
+          <input type="text" name="city" placeholder="What city are you in ..." required>           
+        <label>Zip Code <span>*</span></label>
+          <input type="text" name="zip" placeholder="What zip code are you in ..." required>   
+    </div>
+
+    <!-- SLIDE THREE -->
+    <div class="slide hidden-slide">
+      <h3>How social are you?</h3>
+      <form>
+        <label>Twitter <span>*</span></label>
+          <input type="text" name="twitter" placeholder="Where do we tweet you ..." >    
+        <label>Instagram <span>*</span></label>
+          <input type="text"  name="instagram" placeholder="Where do I DM you ...">      
+        <label>Facebook <span>*</span></label>
+          <input type="text" name="state" placeholder="Where can I poke you...">     
+    </div>
+
+    <!-- SLIDE FOUR -->
+    <div class="slide hidden-slide"> 
+      <h3>Ready to pay?</h3>
+      <form>
+        <label>Credit Card number <span>*</span></label>
+          <input type="text" name="creditcard" placeholder="Where do were take your money from ..." required>    
+        <label>Expiration Date <span>*</span></label>
+          <input type="text"  name="expiration" placeholder="When does this money expire ..." required>      
+        <label>CVC <span>*</span></label>
+          <input type="text" name="cvc" placeholder="What is your 'lil code on the back?..." readonly>  
+        <figure>
+          <blockquote>
+              <p>"Debit card are paid by your past hours, and credit cards are paid by your future hours"</p>
+          </blockquote>
+            <figcaption>—Michael Perez, <cite>My Brain</cite></figcaption>
+        </figure>
+    </div>
+
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+      </div>
+
+      <button class="btn" id="prev" disabled>Prev</button>
+      <button class="btn" id="next">Next</button>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
